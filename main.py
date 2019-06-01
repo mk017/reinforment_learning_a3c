@@ -18,12 +18,12 @@ from class_code.worker import Worker
 disp_res = '1280X800' #400X250,800X500,1280X800
 #level = 'defend_the_center'
 level = 'map01'
-show_worker_0 = True
+show_worker_0 = False
 load_model = True
 max_episode_length = 60
 gamma = 1 # discount rate for advantage estimation and reward discounting
 s_size = 7056 # Observations are greyscale frames of 84 * 84 * 1
-a_size = 9 # Agent can move Left, Right, or Fire
+a_size = 9 # Agent can move or scroll left, right, up, down or fire
 model_path = './models/' + level + '_' + disp_res 
 RES = 'RES_'+ disp_res
 
